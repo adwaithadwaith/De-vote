@@ -1,0 +1,126 @@
+
+ [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "department": "Computer Science",
+        "KTUId": "CS123456"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "department": "Electrical Engineering",
+        "KTUId": "EE789012"
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "department": "Mechanical Engineering",
+        "KTUId": "ME345678"
+      },
+      {
+        "id": 4,
+        "name": "Alice Brown",
+        "department": "Civil Engineering",
+        "KTUId": "CE901234"
+      },
+      {
+        "id": 5,
+        "name": "Charlie Miller",
+        "department": "Chemical Engineering",
+        "KTUId": "CH567890"
+      },
+      {
+        "id": 6,
+        "name": "Eva White",
+        "department": "Biomedical Science",
+        "KTUId": "BS123456"
+      },
+      {
+        "id": 7,
+        "name": "Frank Taylor",
+        "department": "Physics",
+        "KTUId": "PH789012"
+      },
+      {
+        "id": 8,
+        "name": "Grace Anderson",
+        "department": "Mathematics",
+        "KTUId": "MA345678"
+      },
+      {
+        "id": 9,
+        "name": "Henry Clark",
+        "department": "Chemistry",
+        "KTUId": "CH901234"
+      },
+      {
+        "id": 10,
+        "name": "Isabel Williams",
+        "department": "Environmental Science",
+        "KTUId": "ES567890"
+      },
+      {
+        "id": 11,
+        "name": "Jack Harrison",
+        "department": "Information Technology",
+        "KTUId": "IT123456"
+      },
+      {
+        "id": 12,
+        "name": "Katherine Baker",
+        "department": "Biotechnology",
+        "KTUId": "BT789012"
+      },
+      {
+        "id": 13,
+        "name": "Leonard Fisher",
+        "department": "Materials Science",
+        "KTUId": "MS345678"
+      },
+      {
+        "id": 14,
+        "name": "Mia Lee",
+        "department": "Aerospace Engineering",
+        "KTUId": "AE901234"
+      },
+      {
+        "id": 15,
+        "name": "Nathan Perez",
+        "department": "Robotics",
+        "KTUId": "RO567890"
+      },
+      {
+        "id": 16,
+        "name": "Oliver Wright",
+        "department": "Data Science",
+        "KTUId": "DS123456"
+      },
+      {
+        "id": 17,
+        "name": "Penelope Garcia",
+        "department": "Neuroscience",
+        "KTUId": "NS789012"
+      },
+      {
+        "id": 18,
+        "name": "Quinn Evans",
+        "department": "Business Administration",
+        "KTUId": "BA345678"
+      },
+      {
+        "id": 19,
+        "name": "Rachel Adams",
+        "department": "Public Health",
+        "KTUId": "PH901234"
+      },
+      {
+        "id": 20,
+        "name": "Samuel Turner",
+        "department": "Social Work",
+        "KTUId": "SW567890"
+      }
+    
+    ]
+  
+  

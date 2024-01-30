@@ -1,0 +1,128 @@
+[
+     
+      {
+        "id": 1,
+        "firstName": "John",
+        "middleName": "Michael",
+        "lastName": "Doe",
+        "partyName": "Independent",
+        "electionType": "Chairman"
+      },
+      {
+        "id": 2,
+        "firstName": "Jane",
+        "middleName": "Elizabeth",
+        "lastName": "Smith",
+        "partyName": "Democratic",
+        "electionType": "Art club secretary"
+      },
+      {
+        "id": 3,
+        "firstName": "Bob",
+        "middleName": "William",
+        "lastName": "Johnson",
+        "partyName": "Republican",
+        "electionType": "General secretary"
+      },
+      {
+        "id": 4,
+        "firstName": "Alice",
+        "middleName": "Marie",
+        "lastName": "Brown",
+        "partyName": "Green Party",
+        "electionType": "General secretary"
+      },
+      {
+        "id": 5,
+        "firstName": "Charlie",
+        "middleName": "David",
+        "lastName": "Miller",
+        "partyName": "Libertarian",
+        "electionType": "Art club secretary"
+      },
+      {
+        "id": 6,
+        "firstName": "Eva",
+        "middleName": "Grace",
+        "lastName": "White",
+        "partyName": "Socialist",
+        "electionType": "Art club secretary"
+      },
+      {
+        "id": 7,
+        "firstName": "Frank",
+        "middleName": "Joseph",
+        "lastName": "Taylor",
+        "partyName": "Independent",
+        "electionType": "Chairman"
+      },
+      {
+        "id": 8,
+        "firstName": "Grace",
+        "middleName": "Olivia",
+        "lastName": "Anderson",
+        "partyName": "Democratic",
+        "electionType": "Chairman"
+      },
+      {
+        "id": 9,
+        "firstName": "Henry",
+        "middleName": "Thomas",
+        "lastName": "Clark",
+        "partyName": "Republican",
+        "electionType": "Art club secretary"
+      },
+      {
+        "id": 10,
+        "firstName": "Isabel",
+        "middleName": "Sophia",
+        "lastName": "Williams",
+        "partyName": "Independent",
+        "electionType": "General secretary"
+      },
+      {
+        "id": 11,
+        "firstName": "Jack",
+        "middleName": "Edward",
+        "lastName": "Lee",
+        "partyName": "Green Party",
+        "electionType": "Chairman"
+      },
+      {
+        "id": 12,
+        "firstName": "Kelly",
+        "middleName": "Anna",
+        "lastName": "Davis",
+        "partyName": "Socialist",
+        "electionType": "General secretary"
+      },
+      {
+        "id": 13,
+        "firstName": "Leo",
+        "middleName": "James",
+        "lastName": "Wilson",
+        "partyName": "Libertarian",
+        "electionType": "Chairman"
+      },
+      {
+        "id": 14,
+        "firstName": "Mia",
+        "middleName": "Rose",
+        "lastName": "Jones",
+        "partyName": "Democratic",
+        "electionType": "Art club secretary"
+      },
+      {
+        "id": 15,
+        "firstName": "Noah",
+        "middleName": "Daniel",
+        "lastName": "Smith",
+        "partyName": "Republican",
+        "electionType": "General secretary"
+      }
+
+    
+      
+    
+    ]
+  
