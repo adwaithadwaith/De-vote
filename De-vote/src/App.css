@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-image:url("../../images/john-fowler-RsRTIofe0HE-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%; 
+      height: 100vh;
+  }
