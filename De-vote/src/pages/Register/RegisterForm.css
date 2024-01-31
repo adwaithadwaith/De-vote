@@ -1,0 +1,126 @@
+/* For Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.register{
+    padding-top:7%;
+}
+
+.login{
+    width: 25%;
+    height: 20%;
+    float:right;
+    margin-right: 20%;
+    background-color:rgba(147, 143, 195, 0.5);
+   
+    padding-bottom: 3rem;
+    border-bottom-right-radius:25px ;
+    border-top-left-radius:25px ;
+}
+.title{
+    padding: 20px;
+}
+
+.txt{
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: x-large;
+    padding-left: 11%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.id{
+    
+    height: 40px;
+    width: 76%;
+    border-radius: 8px;
+    margin-left: 10%;
+}
+
+.name{
+    height: 40px;
+    width: 76%;
+    border-radius: 8px;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.mobile{
+    height: 40px;
+    width: 50%;
+    border-radius: 8px;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.verify{
+    height: 31px;
+    width: 60%;
+    background-color: #AC385B;
+    border-radius: 8px;
+    right: 10px;
+    color: white;
+}
+
+.verify-btn{
+    padding-top: 20px;
+    float: right;
+    width: 35%;
+}
+
+
+.pswd{
+    margin-left: 10%;
+    margin-top: 15px;
+    height: 40px;
+    width: 76%;
+    border-radius: 8px;
+}
+
+.sub-btn{
+    height: 30px;
+    width: 30%;
+    background-color: #4838AC;
+    border-radius: 8px;
+    right: 10px;
+    color: white;
+}
+
+.login-btn {
+    padding-top: 15px;
+    padding-right: 50px;
+    display: flex;
+    flex: end;
+}
+
+.description{
+    margin-left: 12%;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background-image:url("../../images/john-fowler-RsRTIofe0HE-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%; 
+      height: 100vh;
+  } */
