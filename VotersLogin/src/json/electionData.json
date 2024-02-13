@@ -1,0 +1,22 @@
+{
+  "Chairperson": [
+    {"name": "Rahul C V", "votes": 120},
+    {"name": "Priya", "votes": 95},
+    {"name": "Boche", "votes": 75}
+  ],
+  "Magazine Editor": [
+    {"name": "Hemaandi", "votes": 130},
+    {"name": "Dev", "votes": 100},
+    {"name": "Jyothika", "votes": 90}
+  ],
+  "Arts Club Secretary": [
+    {"name": "Karavanam", "votes": 110},
+    {"name": "Varun", "votes": 105},
+    {"name": "Messi", "votes": 95}
+  ],
+  "Department Representative": [
+    {"name": "Soman", "votes": 140},
+    {"name": "Neymar", "votes": 135},
+    {"name": "Zico", "votes": 80}
+  ]
+}

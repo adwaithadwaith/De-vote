@@ -1,39 +1,80 @@
-import React from 'react'
-import './RegisterForm.css'
-import NavBar from '../../components/NavBar/NavBar'
-import { Link, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import './RegisterForm.css';
+import NavBar from '../../components/NavBar/NavBar';
+import { Link } from 'react-router-dom';
 
 function RegisterForm() {
+  const [email, setEmail] = useState('');
+  const [ktuid, setKtuid] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const user = { email, ktuid, password };
+
+    try {
+      const response = await fetch('/signup', { // Adjust the URL based on your backend endpoint
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(user)
+      });
+
+      if (response.ok) {
+        console.log('Registration successful');
+        // Perform any actions after successful registration, e.g., redirect to login page
+      } else {
+        console.log('Failed to register', response);
+      }
+    } catch (error) {
+      console.error('Failed to register', error);
+    }
+  };
+
   return (
     <div className='registerpage'>
-        <NavBar/>
+        <NavBar />
         <div className="register">
-      <div className='login'>
-        <div className="title"><h3 className='txt'>Voter Register</h3></div>
-        <div className="form">
-            <form action="">
-              <input className='id' type="text" name='ID' placeholder='User id'/>
-              <input className='name' type="text" name='name' placeholder='Name'/>
-              <input className='mobile' type='number' name='mobile' placeholder='Mobile'/>
-              <div className="verify-btn">
-                <input className='verify' type='submit' name='verify' value='Verify' />
-              </div>
-              <input className='pswd' type='password' name='password' placeholder='Password'/>
-              <div className='login-btn'>
-                <input className='sub-btn mx-[40px]' type='submit' value='Register'/>
-              </div>
-            </form>
-        </div> 
-        <div className='description'>
-          <Routes>
-            <Route path='/' element={<p>Already have an account? <Link className=' text-blue-800' to="/login">Login</Link></p>  }></Route>
-          </Routes>
-          
-        </div>       
-      </div>
+            <div className='login'>
+                <div className="title"><h3 className='txt'>Voter Register</h3></div>
+                <div className="form">
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            className='email'
+                            type="email"
+                            name='email'
+                            placeholder='Email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <input
+                            className='id'
+                            type="text"
+                            name='ktuid'
+                            placeholder='KTU ID'
+                            value={ktuid}
+                            onChange={(e) => setKtuid(e.target.value)}
+                        />
+                        <input
+                            className='pswd'
+                            type='password'
+                            name='password'
+                            placeholder='Password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                        <div className='login-btn'>
+                            <input className='sub-btn mx-[40px]' type='submit' value='Register'/>
+                        </div>
+                    </form>
+                </div> 
+                <div className='description'>
+                    <p>Already have an account? <Link className='text-blue-800' to="/login">Login</Link></p>
+                </div>       
+            </div>
         </div>
     </div>
-  )
+  );
 }
 
-export default RegisterForm
+export default RegisterForm;

@@ -23,7 +23,7 @@ const router = createBrowserRouter(
       <Route path='/elections' element={<Elections/>}/>
       <Route path='/results' element={<Results/>}/>
       <Route path='/login' element={<Login/>}/>
-      <Route path='/register' element={<RegisterForm/>}/>
+      <Route path='/signup' element={<RegisterForm/>}/>
       <Route path='/admin' element={<AdminLogin/>}/>
     </Route>
     

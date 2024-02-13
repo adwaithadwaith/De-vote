@@ -109,7 +109,13 @@ input::-webkit-inner-spin-button {
 }
 
 
-
+.email{
+        height: 40px;
+        width: 76%;
+        border-radius: 8px;
+        margin-left: 10%;
+        margin-top: 15px;
+}
 
 
 
