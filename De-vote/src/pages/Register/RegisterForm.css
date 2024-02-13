@@ -45,6 +45,7 @@ input::-webkit-inner-spin-button {
     width: 76%;
     border-radius: 8px;
     margin-left: 10%;
+    margin-top: 15px;
 }
 
 .name{
@@ -114,7 +115,7 @@ input::-webkit-inner-spin-button {
         width: 76%;
         border-radius: 8px;
         margin-left: 10%;
-        margin-top: 15px;
+        
 }
 
 

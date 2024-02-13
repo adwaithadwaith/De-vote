@@ -1,30 +1,35 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './RegisterForm.css';
 import NavBar from '../../components/NavBar/NavBar';
 import { Link } from 'react-router-dom';
 
-function RegisterForm() {
+function RegisterForm() { 
   const [email, setEmail] = useState('');
   const [ktuid, setKtuid] = useState('');
   const [password, setPassword] = useState('');
 
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const user = { email, ktuid, password };
 
     try {
-      const response = await fetch('/signup', { // Adjust the URL based on your backend endpoint
+      const response = await fetch(`http://localhost:3000/signup`, { // change this when hosting
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(user)
       });
 
       if (response.ok) {
+
         console.log('Registration successful');
+        
+        navigate('/');
         // Perform any actions after successful registration, e.g., redirect to login page
       } else {
-        console.log('Failed to register', response);
+        console.log('Failed to register123', response);
       }
     } catch (error) {
       console.error('Failed to register', error);

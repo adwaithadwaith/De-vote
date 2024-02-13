@@ -1,0 +1,47 @@
+[33mcommit c07fa24514523fac82a34b06ad1a4fb6018a7236[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: ec46cb0 94be632
+Author: ADWAITH M SHAJU <30382995+adwaithadwaith@users.noreply.github.com>
+Date:   Tue Feb 13 13:38:02 2024 +0530
+
+    Merge pull request #2 from ShijinA530/voter
+    
+    Voter
+
+[33mcommit 94be632454011fb04124dfd480ebf435d2da11b5[m
+Author: Shijin A <shijinasasi835@gmail.com>
+Date:   Tue Feb 13 13:32:08 2024 +0530
+
+    voterpage done
+
+[33mcommit db2dd8089460777d2ffabef3fbf3496698b7709a[m
+Author: Shijin A <shijinasasi835@gmail.com>
+Date:   Mon Feb 12 22:28:47 2024 +0530
+
+    one voterpage
+
+[33mcommit 40480d5b06f7ebd81d6b9ac7f72d43fe6b0e8f0e[m
+Author: Shijin A <shijinasasi835@gmail.com>
+Date:   Mon Feb 12 13:38:12 2024 +0530
+
+    voterLogin initial
+
+[33mcommit ec46cb098a4ff5d39f08f7e4e5970102c5a33f42[m
+Merge: 279ea56 8d4f4cc
+Author: ADWAITH M SHAJU <30382995+adwaithadwaith@users.noreply.github.com>
+Date:   Wed Jan 31 14:50:08 2024 +0530
+
+    Merge pull request #1 from ShijinA530/feature
+    
+    set1
+
+[33mcommit 8d4f4cc058863fce3ce0a049d132c6fd584f7919[m
+Author: Shijin A <shijinasasi835@gmail.com>
+Date:   Wed Jan 31 14:37:23 2024 +0530
+
+    set1
+
+[33mcommit 279ea5633904c85ad11c410e44d5603d0aabf064[m
+Author: Adwaith M Shaju <adwaith467@gmail.com>
+Date:   Tue Jan 30 23:59:07 2024 +0530
+
+    Initial commit
