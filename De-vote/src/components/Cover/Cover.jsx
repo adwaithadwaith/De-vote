@@ -19,7 +19,7 @@ function Cover() {
         </div> 
         <div className='description'>
           <Routes>
-            <Route path='/' element={<p> Don't have an account? <Link className ='text-blue-800' to="/register">Register</Link></p>  }></Route>
+            <Route path='/' element={<p> Don't have an account? <Link className ='text-blue-800' to="/signup">Register</Link></p>  }></Route>
           </Routes>
           
         </div>       

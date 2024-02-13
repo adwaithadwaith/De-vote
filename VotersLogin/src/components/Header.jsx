@@ -25,24 +25,6 @@ function Header() {
                         Profile
                     </Link>
                 </div>
-                <div
-                    className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-                    id="mobile-menu-2"
-                >
-                    <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <li>
-                            <NavLink
-                                to='/vote'
-                                className={({isActive}) =>
-                                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
-                                    ${isActive? 'text-white':'text-grey-700'} lg:hover:bg-transparent lg:border-0 hover:text-gray-300 lg:p-0`
-                                }
-                            >
-                                Vote
-                            </NavLink>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </header>
