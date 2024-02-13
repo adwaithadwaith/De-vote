@@ -33,7 +33,7 @@ function Header() {
                         
                     <li>
                             <NavLink
-                                to='/Dashboard'
+                                to='/'
                                 className={({isActive}) =>
                                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100
                                     ${isActive? ' text-white':'text-grey-700'} lg:hover:bg-transparent lg:border-0 hover:text-gray-300 lg:p-0`
