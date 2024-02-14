@@ -27,7 +27,7 @@ function Cover() {
         // Login successful
         console.log('Login successful');
 
-        navigate('/')
+        navigate('/dashboard')
       } else {
         // Login failed
         console.log('Login failed');
