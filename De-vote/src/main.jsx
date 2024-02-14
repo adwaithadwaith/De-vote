@@ -18,11 +18,11 @@ const router = createBrowserRouter(
   
     <Route path='/' element ={<Layout/>}>
       <Route path='/candidate' element={<Candidate/>}/>
-      <Route index={true} element={<Dashboard/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/voters' element={<Voter/>}/>
       <Route path='/elections' element={<Elections/>}/>
       <Route path='/results' element={<Results/>}/>
-      <Route path='/login' element={<Login/>}/>
+      <Route index={true} element={<Login/>}/>
       <Route path='/signup' element={<RegisterForm/>}/>
       <Route path='/admin' element={<AdminLogin/>}/>
     </Route>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   flexRender,
   getCoreRowModel,
@@ -7,7 +7,6 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
-import { useState } from 'react';
 
 function TableCandidates({ data, columns }) {
   const [sorting, setSorting] = useState([]);
@@ -21,7 +20,7 @@ function TableCandidates({ data, columns }) {
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     state: {
-      sorting: sorting,
+      sorting,
       globalFilter: filtering,
     },
     onSortingChange: setSorting,
@@ -35,7 +34,7 @@ function TableCandidates({ data, columns }) {
         type='text'
         value={filtering}
         onChange={(e) => setFiltering(e.target.value)}
-        placeholder='search'
+        placeholder='Search'
       />
       <table className='w3-table-all'>
         <thead>
@@ -72,14 +71,13 @@ function TableCandidates({ data, columns }) {
             <tr key={row.id}>
               {row.getVisibleCells().map((cell) => (
                 <td key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  {flexRender(cell.column.columnDef.accessorFn(row.original), cell.getContext())}
                 </td>
               ))}
               {/* Add the new Verify column with a button */}
               <td>
                 <button
                   className='bg-green-500 text-white p-2 rounded-md hover:shadow-md '
-                  
                 >
                   Verify
                 </button>
