@@ -27,6 +27,45 @@ function TableCandidates({ data, columns }) {
     onGlobalFilterChange: setFiltering,
   });
 
+  const handleDelete = async (candidateID) => {
+    try {
+      // Show confirmation dialog to confirm deletion
+      const isConfirmed = window.confirm('Are you sure you want to delete this candidate?');
+  
+      // Check if user confirmed deletion
+      if (!isConfirmed) {
+        // If not confirmed, return without deleting
+        return;
+      }
+  
+      // Send the deletion request to the server
+      const requestData = {
+        candidateID: candidateID
+      };
+  
+      const response = await fetch(`http://localhost:3000/candidate-delete`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData), 
+      });
+  
+      if (response.ok) {
+        // Log success message
+        console.log(`Candidate with ID ${candidateID} has been deleted successfully.`);
+        
+      } else {
+        // Log error message if deletion failed
+        console.error('Failed to delete candidate:', response.statusText);
+      }
+    } catch (error) {
+      // Log any unexpected errors
+      console.error('An unexpected error occurred:', error.message);
+    }
+  };
+  
+
   return (
     <div className='w3-container'>
       <input
@@ -60,8 +99,8 @@ function TableCandidates({ data, columns }) {
                   )}
                 </th>
               ))}
-              {/* Add the new Verify column header */}
-              <th>Verify</th>
+              {/* Add the new Delete column header */}
+              <th>Delete</th>
             </tr>
           ))}
         </thead>
@@ -71,15 +110,17 @@ function TableCandidates({ data, columns }) {
             <tr key={row.id}>
               {row.getVisibleCells().map((cell) => (
                 <td key={cell.id}>
-                  {flexRender(cell.column.columnDef.accessorFn(row.original), cell.getContext())}
+                  {/* Check if accessorFn exists, if not, use cell value */}
+                  {cell.column.columnDef.accessorFn ? cell.column.columnDef.accessorFn(row.original) : cell.value}
                 </td>
               ))}
-              {/* Add the new Verify column with a button */}
+              {/* Change the Verify button to a Delete button */}
               <td>
                 <button
-                  className='bg-green-500 text-white p-2 rounded-md hover:shadow-md '
+                  className='bg-red-500 text-white p-2 rounded-md hover:shadow-md '
+                  onClick={() => handleDelete(row.original.candidateID)}
                 >
-                  Verify
+                  Delete
                 </button>
               </td>
             </tr>

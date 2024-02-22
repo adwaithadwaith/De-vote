@@ -7,14 +7,13 @@ import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 function Cover() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const user = { email, password };
-    
 
     try {
       const response = await fetch('http://localhost:3000/login', {
@@ -24,10 +23,32 @@ function Cover() {
       });
 
       if (response.ok) {
+
+        const responseData = await response.json();
+
+        const token = responseData.token;
+
+        localStorage.setItem('jwt', token);
+
         // Login successful
         console.log('Login successful');
 
-        navigate('/dashboard')
+        // Get the JWT token from the response headers
+        const setCookieHeader = response.headers.get('Set-Cookie');
+
+        console.log(setCookieHeader);
+        
+        if (setCookieHeader) {
+          const jwtToken = setCookieHeader.split('=')[1].split(';')[0];
+
+          console.log(jwtToken);
+          
+          // Store the JWT token in local storage or session storage
+          localStorage.setItem('jwt', jwtToken);
+        }
+
+        // Navigate to the dashboard
+        navigate('/dashboard');
       } else {
         // Login failed
         console.log('Login failed');
@@ -36,6 +57,7 @@ function Cover() {
       console.error('Login error:', error);
     }
   };
+
   return (
     <div className='cover'>
       <div className='login'>

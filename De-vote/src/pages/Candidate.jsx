@@ -25,10 +25,10 @@ function Candidate() {
 
   const columns = [
     {
-      header: 'ID',
+      header: 'candidate ID',
       accessorKey: 'id',
       footer: 'ID',
-      accessorFn: (row) => row._id, // Accessor function to retrieve ID from row
+      accessorFn: (row) => row.candidateID, // Accessor function to retrieve ID from row
     },
     {
       header: 'Name',
