@@ -1,8 +1,36 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './AdminLogin.css'
 
 
 function AdminLogin() {
+  const [adminId, setAdminId] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    // Create an object with admin details
+    const adminData = { id: adminId, password: password };
+
+    try {
+      const response = await fetch('http://localhost:3000/candidate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(adminData) // Convert admin details to JSON
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to login as admin');
+      }
+
+    } catch (error) {
+      console.error('Error logging in as admin:', error);
+      // Handle error, such as displaying an error message to the user
+    }
+  };
+
   return (
     <div className='adminlogin'>
       <div className='navbar'>
