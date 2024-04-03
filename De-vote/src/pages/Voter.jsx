@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import Table from '../components/Table';
-import * as XLSX from 'xlsx'; // Import XLSX library
+import * as XLSX from 'xlsx';
 import voterdata from '../json/voterdata.json';
 
 function Voter() {

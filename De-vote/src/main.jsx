@@ -13,12 +13,19 @@ import Login from './pages/Login/Login.jsx'
 import RegisterForm from './pages/Register/RegisterForm.jsx'
 import AdminLogin from './pages/AdminLogin/AdminLogin.jsx'
 
+
+
+
+
+
+
 const router = createBrowserRouter(
+  
   createRoutesFromElements(
   
     <Route path='/' element ={<Layout/>}>
       <Route path='/candidate' element={<Candidate/>}/>
-      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}></Route>
       <Route path='/voters' element={<Voter/>}/>
       <Route path='/elections' element={<Elections/>}/>
       <Route path='/results' element={<Results/>}/>

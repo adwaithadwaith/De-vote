@@ -74,7 +74,7 @@ function RegisterForm() {
                     </form>
                 </div> 
                 <div className='description'>
-                    <p>Already have an account? <Link className='text-blue-800' to="/login">Login</Link></p>
+                    <p>Already have an account? <Link className='text-blue-800' to="/">Login</Link></p>
                 </div>       
             </div>
         </div>
