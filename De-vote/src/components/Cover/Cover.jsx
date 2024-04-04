@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import './Cover.css';
 
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuthContext } from '../../hooks/useAuthContext';
 
 function Cover() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const navigate = useNavigate();
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
 
     const user = { email, password };
    
@@ -51,10 +53,10 @@ function Cover() {
         <div className="title"><h3 className='txt'>Voter Login</h3></div>
         <div className="form">
             <form onSubmit={handleSubmit}>
-              <input className='id' type="email" name='email' placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
-              <input className='pswd' type='password' name='password' placeholder='Password' onChange={(e) => setPassword(e.target.value)}/>
-              <div className='login-btn ml-[40px]'>
-                <input className='sub-btn' type='submit' value='Login'/>
+              <input className='h-9 w-3/4 rounded-lg ml-10 mt-0' type="email" name='email' placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
+              <input className='h-9 w-3/4 rounded-lg ml-10 mt-4' type='password' name='password' placeholder='Password' onChange={(e) => setPassword(e.target.value)}/>
+              <div className='pt-4 pr-11 flex justify-end'>
+                <input className='h-7 w-1/4 bg-purple-800 rounded-lg text-white cursor-pointer mr-[16px]' type='submit' value='Login'/>
               </div>
             </form>
         </div> 
