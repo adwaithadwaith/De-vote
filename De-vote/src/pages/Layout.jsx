@@ -1,7 +1,7 @@
 import React from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
 
-import Header from '../components/Header'
+
 
 
 
@@ -10,8 +10,7 @@ function Layout() {
   const isLoginOrRegister = location.pathname === '/' || location.pathname === '/signup' || location.pathname === '/admin';
   const pageClass = isLoginOrRegister ? 'custom-background' : 'normal-background';
   return (
-    <div className={pageClass}>
-          {!isLoginOrRegister && <Header />}
+    <div className='{pageClass}'>
           
         <Outlet/>
       
