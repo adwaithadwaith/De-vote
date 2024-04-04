@@ -3,6 +3,8 @@ import {Outlet, useLocation} from 'react-router-dom'
 
 import Header from '../components/Header'
 
+
+
 function Layout() {
   const location = useLocation();
   const isLoginOrRegister = location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/admin';
