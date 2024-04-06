@@ -97,6 +97,10 @@ input::-webkit-inner-spin-button {
     color: white;
 }
 
+.sub-btn:hover{
+    cursor: pointer;
+}
+
 .login-btn {
     padding-top: 15px;
     padding-right: 50px;

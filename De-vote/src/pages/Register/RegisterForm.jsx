@@ -45,7 +45,7 @@ function RegisterForm() {
                 <div className="form">
                     <form onSubmit={handleSubmit}>
                         <input
-                            className='email'
+                            className='h-9 w-3/4 rounded-lg ml-10 mt-0'
                             type="email"
                             name='email'
                             placeholder='Email'
@@ -53,7 +53,7 @@ function RegisterForm() {
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <input
-                            className='id'
+                            className='h-9 w-3/4 rounded-lg ml-10 mt-4'
                             type="text"
                             name='ktuid'
                             placeholder='KTU ID'
@@ -61,20 +61,20 @@ function RegisterForm() {
                             onChange={(e) => setKtuid(e.target.value)}
                         />
                         <input
-                            className='pswd'
+                            className='h-9 w-3/4 rounded-lg ml-10 mt-[15px]'
                             type='password'
                             name='password'
                             placeholder='Password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <div className='login-btn'>
-                            <input className='sub-btn mx-[40px]' type='submit' value='Register'/>
+                        <div className='pt-4 pr-11 flex justify-end'>
+                            <input className='h-7 w-1/4 bg-purple-800 rounded-lg text-white cursor-pointer mr-[16px]' type='submit' value='Register'/>
                         </div>
                     </form>
                 </div> 
                 <div className='description'>
-                    <p>Already have an account? <Link className='text-blue-800' to="/login">Login</Link></p>
+                    <p>Already have an account? <Link className='text-blue-800' to="/">Login</Link></p>
                 </div>       
             </div>
         </div>
